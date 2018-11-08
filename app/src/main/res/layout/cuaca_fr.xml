@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:background="@drawable/backgroundsuhu"
+>
+
+    <!-- TODO: Update blank fragment layout -->
+    <Spinner android:layout_width="match_parent"
+             android:layout_height="40dp"
+             android:id="@+id/spiner"
+             android:background="@drawable/ic_dropdown">
+    </Spinner>
+    <ImageView
+            app:layout_constraintTop_toTopOf="@id/spiner"
+            app:layout_constraintBottom_toBottomOf="@id/text_kota"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_width="200dp"
+            android:layout_height="250dp"
+            android:id="@+id/bubble"
+            android:background="@drawable/buble_background"/>
+    <TextView
+            android:id="@+id/tanggal"
+            android:layout_width="102dp"
+            android:layout_height="17dp"
+            app:layout_constraintBottom_toTopOf="@id/bar_weather"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="410dp"
+            android:textAppearance="@style/date"
+    />
+    <View
+            android:id="@+id/ellipse"
+            android:layout_width="17dp"
+            android:layout_height="17dp"
+            android:layout_alignParentLeft="true"
+            app:layout_constraintLeft_toRightOf="@id/suhu"
+            app:layout_constraintTop_toBottomOf="@id/iawan"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/derajat"
+            app:layout_constraintTop_toTopOf=""
+    />
+    <TextView
+            android:id="@+id/suhu"
+            android:layout_width="81dp"
+            android:layout_height="85dp"
+            app:layout_constraintBottom_toBottomOf="@id/bubble"
+            app:layout_constraintLeft_toLeftOf="@id/bubble"
+            app:layout_constraintRight_toRightOf="@id/bubble"
+            android:textAppearance="@style/suhu"
+            app:layout_constraintHorizontal_bias="0.42" android:layout_marginBottom="44dp"/>
+    <TextView
+            android:id="@+id/text_kota"
+            android:layout_width="123dp"
+            android:layout_height="29dp"
+            app:layout_constraintBottom_toTopOf="@id/tanggal"
+            android:layout_marginLeft="45dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="377dp"
+            android:textAppearance="@style/text_kota"
+    />
+    <ImageView android:layout_width="101dp"
+               android:layout_height="72dp"
+               app:srcCompat="@drawable/Awan"
+               android:id="@+id/iawan"
+               app:layout_constraintTop_toTopOf="@id/bubble"
+               app:layout_constraintLeft_toLeftOf="@id/bubble"
+               app:layout_constraintRight_toRightOf="@id/bubble"
+               app:layout_constraintBottom_toTopOf="@id/suhu"/>
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:srcCompat="@drawable/ic_bar_weather"
+            android:id="@+id/bar_weather"/>
+    <View
+            android:id="@+id/awankecil"
+            android:layout_width="30dp"
+            android:layout_height="23.61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/awanico"
+            tools:layout_editor_absoluteY="448dp"
+            tools:layout_editor_absoluteX="47dp"/>
+    <View
+            android:id="@+id/awankecil1"
+            android:layout_width="30dp"
+            android:layout_height="23.61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/awanico"
+            tools:layout_editor_absoluteY="448dp"
+            tools:layout_editor_absoluteX="317dp"/>
+    <View
+            android:id="@+id/awankecil2"
+            android:layout_width="30dp"
+            android:layout_height="23.61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/awanico"
+            tools:layout_editor_absoluteY="448dp"
+            tools:layout_editor_absoluteX="142dp"/>
+    <View
+            android:id="@+id/awankecil3"
+            android:layout_width="30dp"
+            android:layout_height="23.61dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/awanico"
+            tools:layout_editor_absoluteY="448dp"
+            tools:layout_editor_absoluteX="230dp"/>
+
+
+</android.support.constraint.ConstraintLayout>
